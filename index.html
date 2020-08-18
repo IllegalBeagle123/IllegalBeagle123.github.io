@@ -20,13 +20,16 @@
           }
           ctx.putImageData(imgData, 0, 0);
           setInterval(function(){ 
+	    var c = 0;
             for (i = 1; i < imgData.data.length; i += 4) {
               if (Math.random()*100>99.9){//99.999999968099
               imgData.data[i] = 0;
               }
             }
-            
             ctx.putImageData(imgData, 0, 0);
+	    ctx.putImageData(imgData, 0, 0);
+            c/=imgData.data.length/4;
+            document.title = "Half-life Simulator: " + (Math.round(c*10000)/100) + "%";
           }, 1);
         </script>
 	</body>

@@ -24,6 +24,7 @@
             for (i = 1; i < imgData.data.length; i += 4) {
               if (Math.random()*100>99.9){//99.999999968099
               imgData.data[i] = 0;
+	      c+=imgData.data[i]/255;
               }
             }
             ctx.putImageData(imgData, 0, 0);

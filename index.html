@@ -1,36 +1,33 @@
+<!DOCTYPE html>
 <html>
-	<body style="background-color:black; overflow: hidden">
-        <title>Half-life Simulator</title>
-		<canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
-  Your browser does not support the HTML5 canvas tag.</canvas>
-		<script>
-          var c = document.getElementById("myCanvas");
-          var ctx = c.getContext("2d");
-          c.width = window.innerWidth;
-          c.height = window.innerHeight;
-          c.style.position = "absolute";
-          c.style.left     = "-1px";
-          c.style.top      = "-1px";
-          ctx.fillStyle = "green";
-          ctx.fillRect(0, 0, c.width, c.height);
-          var imgData = ctx.getImageData(0, 0, c.width, c.height);
-          var i;
-          for (i = 1; i < imgData.data.length; i += 4) {
-            imgData.data[i] = 255;
-          }
-          ctx.putImageData(imgData, 0, 0);
-          setInterval(function(){ 
-            var c = 0;
-            for (i = 1; i < imgData.data.length; i += 4) {
-              if (Math.random()>0.999){//99.999999968099
-              imgData.data[i] = 0;
-              }
-              c+=imgData.data[i]/255;
-            }
-            ctx.putImageData(imgData, 0, 0);
-            c/=imgData.data.length/4;
-            document.title = "Half-life Simulator: " + (Math.round(c*10000)/100) + "%";
-          }, 1);
-        </script>
-	</body>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<div class="nametag">
+		<h1 id="hello">Hello</h1>
+		<h1 id="mynameis">my name is</h1>
+		<div class="white">
+			<h1 id="name">Dylan Barrett</h1>
+		</div>
+	</div>
+</head>
+
+<body>
+  <div class="projects">
+    <p1>Check out my projects!</p1>
+    <div class="container">
+      <div class="cell">
+        <a href="/radiation">
+          <img src="radiation.png"></img>
+        </a>
+      </div>
+      <div class="cell">
+        <a href="/hackyourfriends">
+          <img src="hyf.png"></img>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

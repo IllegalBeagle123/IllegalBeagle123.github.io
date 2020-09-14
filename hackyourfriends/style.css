@@ -1,0 +1,16 @@
+.console {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 80vh;
+  width: 90vw;
+  overflow: scroll;
+  margin: 0 auto;
+  white-space: pre;
+}
+h1 {
+  text-align: center;
+}
+.input {
+  text-align: center;
+}

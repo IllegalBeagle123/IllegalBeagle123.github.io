@@ -1,0 +1,75 @@
+.nametag {
+  background: red;
+  margin: auto;
+  width: 20%;
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  line-height: 80%;
+  font-size: 1.5vw;
+}
+
+.white {
+  background: white;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-family: marker;
+  line-height: 180%;
+}
+
+#hello {
+  color: white;
+  font-family: decker;
+}
+
+#mynameis {
+  color: white;
+  font-family: decker;
+}
+
+@font-face {
+  font-family: decker;
+  src: url(Decker.ttf);
+}
+
+@font-face {
+  font-family: marker;
+  src: url(PermanentMarker-Regular.ttf);
+}
+
+.projects {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2vw;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  width: 35vw;
+}
+
+.cell {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+img {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  max-width:100%;
+  max-height:100%; 
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+body {
+  text-align: center;
+}
